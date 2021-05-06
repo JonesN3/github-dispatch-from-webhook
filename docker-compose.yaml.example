@@ -1,0 +1,11 @@
+version: "2.3"
+services:
+  webhook:
+    restart: unless-stopped
+    image: webhook:latest
+    expose:
+        - "9000"
+    environment:
+        - GITHUB_ORGANIZATION=Username
+        - GITHUB_REPOSITORY=repository-name
+        - GITHUB_TOKEN=peronsal_token

@@ -1,0 +1,7 @@
+[
+  {
+    "id": "deploy-github", # set this to ID of your choice
+    "execute-command": "/var/scripts/dispatch.sh",
+    "command-working-directory": "/var/webhook"
+  }
+]

@@ -1,0 +1,13 @@
+name: Checkout on push to master and incoming hook
+
+on:
+  repository_dispatch:
+    types: redeploy_app
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: <whatever>
+    steps:
+      - uses: actions/checkout@v2
